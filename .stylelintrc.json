@@ -1,0 +1,38 @@
+{
+    "extends": [
+        "stylelint-config-standard"
+    ],
+    "rules": {
+        "selector-max-id": 0,
+        "declaration-property-unit-allowed-list": {
+            "/^border/": [
+                "%",
+                "rem"
+            ],
+            "/^gap|^padding/": [
+                "rem"
+            ]
+        },
+        "unit-allowed-list": [
+            "%",
+            "deg",
+            "px",
+            "rem",
+            "ms",
+            "vh",
+            "fr"
+        ],
+        "color-function-notation": "modern",
+        "media-feature-range-notation": null,
+        "selector-class-pattern": [
+            "^[a-z][a-zA-Z0-9]+$",
+            {
+                "message": "Class name should be camelCase",
+                "severity": "error"
+            }
+        ]
+        
+    },
+    "indentation": "tab",
+    "defaultSeverity": "warning"
+}
